@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Downloader</title>
+    <link type="text/css" href="{% static 'styles/style.css' %}" rel="stylesheet" />
+    <link type="x-icon" href="{% static 'img/download.png' %}" rel="icon" />
+   
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Social Media Downloader</h1>
+            <p>Download videos from Instagram, TikTok, Facebook, and Twitter</p>
+        </div>
+
+        <div class="download-box">
+
+            <div class="platform-selector">
+                <button class="platform-btn active" data-platform="instagram">Instagram</button>
+                <button class="platform-btn" data-platform="tiktok">TikTok</button>
+                <button class="platform-btn" data-platform="facebook">Facebook</button>
+                <button class="platform-btn" data-platform="twitter">Twitter</button>
+            </div>
+
+
+            <div class="input-row">
+                <div class="input-container" id="inputBox">
+                    <input id="urlInput" autocomplete="off" placeholder="Paste Instagram/TikTok/Facebook/Twitter link here">
+                    <img id="pasteBtn" src="{% static 'img/paste.png' %}" />
+                </div>
+                <button class="btn" id="downloadBtn">Download</button>
+            </div>
+            
+            <div id="result" class="result">
+                
+            </div>
+
+        </div>
+
+        <div class="instructions">
+            <h3>How to download:</h3>
+            <ol>
+                <li>Select the platform of your video</li>
+                <li>Copy the link of the video you want to download</li>
+                <li>Paste the link in the input field above</li>
+                <li>Click the Download button and wait for processing</li>
+            </ol>
+        </div>
+
+    </div>
+
+</body>
+ <script src="{% static 'js/downloader.js' %}" ></script>
+</html>
+

@@ -50,6 +50,7 @@ pasteBtn.addEventListener('click', async () => {
 // Download Logic
 downloadBtn.addEventListener('click', () => {
     const url = videoUrlInput.value.trim();
+    console.log(url);
     if (!url) {
         alert('Please enter a valid URL');
         return;

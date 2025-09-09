@@ -62,6 +62,7 @@ def resolve_tiktok_url(url: str) -> str:
         pass
     return url  # return original if not TikTok or resolve fails
 
+
 @csrf_exempt
 def download_video(request):
     if request.method == "POST":

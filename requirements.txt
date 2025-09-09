@@ -2,3 +2,5 @@ asgiref==3.9.1
 Django==5.2.6
 sqlparse==0.5.3
 yt-dlp==2025.9.5
+
+requests~=2.32.5
